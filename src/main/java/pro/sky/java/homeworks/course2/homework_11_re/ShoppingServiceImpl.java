@@ -1,15 +1,28 @@
 package pro.sky.java.homeworks.course2.homework_11_re;
 
-public class ShoppingServiceImpl {
+import org.springframework.stereotype.Service;
 
-    private final List<Item> cart;
+import java.util.ArrayList;
+import java.util.List;
 
-    public ShoppingServiceImpl(List<Item> cart) {
+@Service
+public class ShoppingServiceImpl implements ShoppingService{
+
+    private Cart cart;
+
+    public ShoppingServiceImpl(Cart cart) {
         this.cart = cart;
     }
 
     @Override
-    public List<Item> add(List<Item> cart) {
+    public Cart add(List<Integer> items) {
+        cart.addInCart(items);
+        return cart;
+       }
 
+    @Override
+    public List<Integer> get() {
+        return cart.getCart();
     }
+
 }
