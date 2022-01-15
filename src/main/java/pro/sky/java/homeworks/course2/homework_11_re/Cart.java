@@ -46,7 +46,4 @@ public class Cart {
                 '}';
     }
 
-    public boolean isCartEmpty() {
-        return cart.isEmpty();
-    }
 }

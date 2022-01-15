@@ -7,7 +7,6 @@ public interface ShoppingService {
 
     Cart add(List<Integer> items);
 
-//    Cart get();
 
     List<Integer> get();
 }
