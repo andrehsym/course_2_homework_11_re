@@ -16,9 +16,8 @@ public class ShoppingServiceImpl implements ShoppingService{
 
     @Override
     public Cart add(List<Integer> items) {
-            items = new ArrayList<>();
-            cart.addInCart(items);
-            return cart;
+        cart.addInCart(items);
+        return cart;
        }
 
     @Override
