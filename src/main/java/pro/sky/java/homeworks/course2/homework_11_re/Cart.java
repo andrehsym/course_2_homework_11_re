@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-@Component
 @Scope("prototype")
 public class Cart {
 
